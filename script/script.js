@@ -54,6 +54,21 @@ window.addEventListener('DOMContentLoaded', () => {
     };
     popUpDiscount();
 
+    const moreBtn = () => {
+
+        const btn = document.querySelector('.button');
+
+        document.body.addEventListener('click', (event) => {
+            let target = event.target;
+            if (target.classList.contains('shadow-block')) {
+                btn.style.display = 'none';
+            }
+        }); //popUpDiscount
+    };
+
+
+    moreBtn();
+
     const sendForm = () => {
         const errorMessage = 'Что-то пошло не так...',
             loadMessage = 'Загрузка...',
