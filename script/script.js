@@ -1,6 +1,9 @@
 window.addEventListener('DOMContentLoaded', () => {
     'use strict';
 
+
+    // popups
+
     const popUpCall = () => {
         let popUpCall = document.querySelector('.popup-call');
 
@@ -54,6 +57,8 @@ window.addEventListener('DOMContentLoaded', () => {
     };
     popUpDiscount();
 
+    // more button
+
     const moreBtn = () => {
 
         const btn = document.querySelector('.button');
@@ -68,6 +73,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
     moreBtn();
+
+    // forms
 
     const sendForm = () => {
         const errorMessage = 'Что-то пошло не так...',
